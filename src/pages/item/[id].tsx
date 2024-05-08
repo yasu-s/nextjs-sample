@@ -7,7 +7,7 @@ export default function Page() {
   return (
     <div>
       <p>Item: {router.query.id}</p>
-      <Label label="aaa" />
+      <Label label="aaa" num={1} />
       <Link href="/">Home</Link>
     </div>
   )

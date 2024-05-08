@@ -3,6 +3,7 @@ import styles from './index.module.css'
 type Props = {
   /** ラベル */
   label: string
+  num?: number
 }
 
 /**
@@ -11,5 +12,10 @@ type Props = {
  * @returns Label コンポーネント
  */
 export default function Label(props: Props) {
-  return <div className={styles.label}>{props.label}</div>
+  return (
+    <div className={styles.label}>
+      {props.label}
+      {props.num ? `(${props.num})` : ''}
+    </div>
+  )
 }
