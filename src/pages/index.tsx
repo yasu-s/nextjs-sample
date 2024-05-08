@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
-import Link from 'next/link'
+import Link from "next/link";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 
@@ -52,7 +52,15 @@ export default function Home() {
         </div>
 
         <div className={styles.grid}>
-          <Link className={styles.card} href="/menu">Menu</Link>
+          <Link className={styles.card} href="/menu">
+            Menu
+          </Link>
+          <Link className={styles.card} href="/item/1">
+            Item: 1
+          </Link>
+          <Link className={styles.card} href="/item/2">
+            Item: 2
+          </Link>
         </div>
       </main>
     </>
