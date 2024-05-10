@@ -3,6 +3,7 @@ import styles from './index.module.css'
 type Props = {
   /** ラベル */
   label: string
+  /** 数値 */
   num?: number
 }
 
